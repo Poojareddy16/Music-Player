@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec713be8ff.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="left"><img src="logo.png">  <h1>MyMusic</h1></div>
+        </header>
+    <center>
+    <div class="containerr">
+        <div class="image">
+            <img src="shape.png">
+        </div>
+        <h3 style="font-size: 26px; color: white; margin: 20px;">SHAPE OF YOU-(Ed Sheeran)</h3>
+    </div>
+</center>
+    <div class="bottom">
+        <div class="icons">
+            <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+        </div>
+    </div>
+
+    <script>
+        let songIndex = 0;
+let audioElement = new Audio('Shape-of-You-(Lofi)(PagalWorldl).mp3');
+let masterPlay = document.getElementById('masterPlay');
+let myProgressBar = document.getElementById('myProgressBar');
+
+let songs = [
+    {songName: "cheap-thrills", filepath:"Shape-of-You-(Lofi)(PagalWorldl).mp3"},
+]
+
+masterPlay.addEventListener('click' , ()=>{
+    if(audioElement.paused || audioElement.currentTime<=0){
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-play');
+        masterPlay.classList.add('fa-circle-pause');
+    }
+    else{
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-pause');
+        masterPlay.classList.add('fa-circle-play'); 
+    }
+})
+
+
+    </script>
+
+
+</body>
+</html>

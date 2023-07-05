@@ -1,0 +1,167 @@
+*{
+    padding: auto;
+    margin: auto;
+}
+body{
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(186, 83, 64);
+    height: 45px;
+    justify-content: space-between;
+}
+header img{
+    width: 35px;
+    height: 35px;
+    float: left;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+header h1{
+    padding-top: 5px;
+}
+nav{
+    background-color: rgb(192, 108, 108);
+    display: flex;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+nav ul li a:hover{
+    color: rgb(64, 1, 1);
+    font-size: 1.6rem;
+    font-weight: bold;
+} 
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.containerr{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.image {
+    margin: 10px;
+}
+
+.image img {
+    width: 530px;
+    height: 530px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin: auto;
+    box-shadow: 0 4px 5px 0 rgba(184, 179, 179, 0.2), 0 6px 20px 0 rgba(195, 195, 195, 0.19);    
+}
+
+hr{
+    color: rgb(255, 255, 255);
+    height: 2px;
+    margin-bottom: 20px;
+}
+.artists{
+    margin: 30px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#title h3{
+    font-size: 2.3rem;
+    margin: 30px 50px;
+}
+.artists .icon{
+    margin: 10px;
+}
+.artists .icon img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+.icon{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.name{
+margin-top: 5px;
+}
+.name h3{
+font-weight: 30;
+margin-left: 10px;
+font-size: 20px;
+
+}
+.name .action{
+float: left;
+margin-right: 20px;
+margin-left: 10px;
+}
+.bottom{
+position: sticky;
+height: 100px;
+background-color: rgb(44, 44, 44);
+color: white;
+bottom: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#myProgressBar{
+width: 800px;
+}
+.icons{
+font-size: 40px;
+}
+.icons i{
+margin-right: 10px;
+margin-top: auto;
+cursor: pointer;
+}
+.box{
+    width: 500px;
+    height: 27px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+   }
+.box h3{
+    color: black;
+    font-size: 20px;
+   }
+   .box a{
+    text-decoration: none;
+   }
+   #list{
+    margin: 30px 0;
+   }
+   .singer{
+    font-size: 16px;
+    color: #303030;
+   }
